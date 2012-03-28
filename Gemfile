@@ -5,14 +5,10 @@ gem 'rails', '3.2.2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# Usamos postgres para Heroku en Producción
-group :production do
-	gem 'pg'
-end
-
 # Usamos sqlite3 en Desarrollo y Testing
 group :development, :test do
 	gem 'sqlite3'
+	gem 'mysql'
 end
 
 # gem 'mysql2'
